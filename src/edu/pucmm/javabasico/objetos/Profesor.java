@@ -17,6 +17,17 @@ public class Profesor {
     private String nombre;
     private Date fechaNacimiento;
 
+    public Profesor() {
+    }
+
+    public Profesor(String cedula, String nombre, Date fechaNacimiento) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+    
+    
+
     /**
      * @return the cedula
      */
