@@ -22,6 +22,13 @@ public class CientificoA extends Cientifico implements IMilitar{
     public void seguirOrdenes() {
         System.out.println("Cientifico sigue ordenes...");  
     }
+
+    @Override
+    public void entrenar() {
+        //IMilitar.super.entrenar(); 
+        System.out.println("Entrenando de forma diferente el cientifico....");
+    }
+    
     
     
 }

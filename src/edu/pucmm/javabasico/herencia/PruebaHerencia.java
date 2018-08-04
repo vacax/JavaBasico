@@ -6,6 +6,7 @@
 package edu.pucmm.javabasico.herencia;
 
 
+import edu.pucmm.javabasico.objetos.Profesor;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

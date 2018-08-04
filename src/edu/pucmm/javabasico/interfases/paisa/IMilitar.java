@@ -19,5 +19,8 @@ public interface IMilitar {
     public abstract void disparar();
     
     void seguirOrdenes(); // el publico y abstracto está implicito....
-    
+   
+    default void entrenar(){ //agregando default puedo implementar java 8 en adelante.
+        System.out.println("Entrenado.... "+ this.getClass().getName());
+    }
 }

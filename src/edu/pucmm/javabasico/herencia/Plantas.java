@@ -9,7 +9,7 @@ package edu.pucmm.javabasico.herencia;
  *
  * @author vacax
  */
-public class Plantas extends SeresVivos {
+public final class Plantas extends SeresVivos {
 
     String color;
     String tamaño;
@@ -20,4 +20,10 @@ public class Plantas extends SeresVivos {
         System.out.println("Foto: " + this.getClass().getName());
     }
 
+}
+
+class OtraPlanta /*extends Plantas*/{
+    //Otra clase.
+    String cualquierPropiedad;
+    //otros metodos...
 }

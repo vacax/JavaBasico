@@ -68,6 +68,7 @@ public class MainInterfases {
         for (IMilitar militar : lista) {
             militar.disparar();
             militar.seguirOrdenes();
+            militar.entrenar();
         }
     }
 
