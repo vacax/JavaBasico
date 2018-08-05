@@ -17,4 +17,6 @@ public class MatriculaNoPermitidaExcepcion extends Exception{
     public MatriculaNoPermitidaExcepcion(String mensaje){
         super(mensaje);
     }
+    
+    //incluir cualquier cosa...
 }
