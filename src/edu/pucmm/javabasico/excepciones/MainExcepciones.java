@@ -32,6 +32,7 @@ public class MainExcepciones {
         try {
             RandomAccessFile randomAccessFile =new RandomAccessFile(archivo, "r");
             //Si no existe error continua...
+            System.out.println("La cantidad bytes archivo: "+randomAccessFile.length());
         } catch (FileNotFoundException ex) {
             //Si tengo un error entre en este bloque...
             System.out.println("Entro al bloque de archivo no encontrado...");
@@ -40,17 +41,24 @@ public class MainExcepciones {
             ex.printStackTrace();
         } finally{
             //se ejecuta siempre al final del bloque try o catch.
-            System.out.println("Existe o no problema siempre entra");
+            System.out.println("Existe o no problema siempre entra - Bloque Finally");
         }
         
+        //validarInformacion("1323123");
         try {
             validarInformacion("213123");
+            validarInformacion("20011136"); // genera una excepcion.
         } catch (MatriculaNoPermitidaExcepcion ex) {
             Logger.getLogger(MainExcepciones.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
     
+    /**
+     * metodo para validar una matricula que genera una excepción.
+     * @param matricula
+     * @throws MatriculaNoPermitidaExcepcion 
+     */
     public  static void validarInformacion(String matricula) throws MatriculaNoPermitidaExcepcion{
         if(!matricula.equals("20011136")){
             //throw disparamos una excepción mia o de de otros.
